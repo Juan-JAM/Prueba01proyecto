@@ -1,13 +1,1383 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=index.php">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger City</title>
+    <title>Burger City | Gestión de Pedidos</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <p>Redirigiendo a Burger City...</p>
-    <p><a href="index.php">Abrir Burger City</a></p>
+<!--
+<header class="topbar">
+
+    <div class="topbar-inner">
+
+        <a href="#inicio" class="brand">
+            <img src="image.png" alt="Burger City">
+        </a>
+
+        <nav class="main-nav">
+            <a href="#menu">Menú</a>
+            <a href="#pedido">Mi pedido</a>
+            <a href="#historial">Historial</a>
+        </nav>
+
+    </div>
+
+</header> -->
+
+
+<main id="inicio">
+
+<!--
+<section class="hero">
+
+    <div class="hero-copy">
+
+        <p class="eyebrow">
+            BURGER CITY · COMIDA RÁPIDA
+        </p>
+
+        <h1>
+            Tu antojo,
+            <span>hecho al momento.</span>
+        </h1>
+
+        <p class="hero-text">
+            Elige tus favoritos, arma tu pedido y selecciona
+            si lo consumirás en el local o quieres pedirlo para llevar.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#menu" class="btn btn-primary">
+                Ver menú
+            </a>
+
+            <a href="#pedido" class="btn btn-secondary">
+                Armar pedido
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=1200&q=85"
+            alt="Hamburguesa"
+        >
+
+    </div>
+
+</section>
+
+-->
+
+<section class="menu-order-layout">
+
+    <section class="menu-section" id="menu">
+
+   <!-- <div class="section-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                NUESTRO MENÚ
+            </p>
+
+            <h2>
+                Elige lo que se te antoje
+            </h2>
+
+        </div>
+
+        <p class="menu-note">
+            Precios en USD
+        </p>
+
+    </div> -->
+
+
+
+    <div class="category-bar">
+
+        
+            <a href="#hamburguesas">
+
+                Hamburguesas
+            </a>
+
+        
+            <a href="#hot-dogs">
+
+                Hot Dogs
+            </a>
+
+        
+            <a href="#nachos">
+
+                Nachos
+            </a>
+
+        
+            <a href="#sandwiches">
+
+                Sandwiches
+            </a>
+
+        
+            <a href="#sodas">
+
+                Sodas
+            </a>
+
+        
+    </div>
+
+
+
+    
+        <div
+            class="menu-group"
+            id="hamburguesas"
+        >
+
+            <div class="category-title">
+
+                <h3>
+                    Hamburguesas                </h3>
+
+                <span></span>
+
+            </div>
+
+
+
+            <div class="product-grid">
+
+                
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+                                <span class="product-tag">
+                                    Favorita                                </span>
+
+                            
+
+                            <img
+                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                                alt="Burger Clásica"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Burger Clásica                                </h4>
+
+                                <strong>
+                                    $5.50                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Carne de res, queso, lechuga, tomate, cebolla y salsa de la casa.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Burger Clásica"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+                                <span class="product-tag">
+                                    Especial                                </span>
+
+                            
+
+                            <img
+                                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                                alt="Burger Doble"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Burger Doble                                </h4>
+
+                                <strong>
+                                    $7.50                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Doble carne de res, doble queso, vegetales frescos y salsa especial.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Burger Doble"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+
+                            <img
+                                src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                                alt="Burger Bacon"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Burger Bacon                                </h4>
+
+                                <strong>
+                                    $7.25                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Carne de res, queso cheddar, tocino crujiente, lechuga y salsa BBQ.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Burger Bacon"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            </div>
+
+        </div>
+
+    
+        <div
+            class="menu-group"
+            id="hot-dogs"
+        >
+
+            <div class="category-title">
+
+                <h3>
+                    Hot Dogs                </h3>
+
+                <span></span>
+
+            </div>
+
+
+
+            <div class="product-grid">
+
+                
+                    
+                    
+                    
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSWupoFYUjoTO84eeYjpaT55MOFoSmENk-6S7U1rAJKnjr45FqLJApqyT&amp;s=10"
+                                alt="Hot Dog Clásico"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Hot Dog Clásico                                </h4>
+
+                                <strong>
+                                    $4.00                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Salchicha, cebolla, mostaza, kétchup y salsa de la casa.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Hot Dog Clásico"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+                                <span class="product-tag">
+                                    Nuevo                                </span>
+
+                            
+
+                            <img
+                                src="https://i.blogs.es/b40101/hotdog/650_1200.jpg"
+                                alt="Hot Dog Supremo"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Hot Dog Supremo                                </h4>
+
+                                <strong>
+                                    $5.25                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Salchicha, queso, tocino, cebolla caramelizada y aderezo especial.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Hot Dog Supremo"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    
+                    
+                    
+                    
+                    
+            </div>
+
+        </div>
+
+    
+        <div
+            class="menu-group"
+            id="nachos"
+        >
+
+            <div class="category-title">
+
+                <h3>
+                    Nachos                </h3>
+
+                <span></span>
+
+            </div>
+
+
+
+            <div class="product-grid">
+
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+
+                            <img
+                                src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                                alt="Nachos con Queso"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Nachos con Queso                                </h4>
+
+                                <strong>
+                                    $4.50                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Totopos crujientes con queso fundido, jalapeño y salsa.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Nachos con Queso"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+                                <span class="product-tag">
+                                    Especial                                </span>
+
+                            
+
+                            <img
+                                src="https://images.unsplash.com/photo-1582169296194-e4d644c48063?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                                alt="Nachos Supreme"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Nachos Supreme                                </h4>
+
+                                <strong>
+                                    $6.25                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Totopos, carne sazonada, queso, frijoles, pico de gallo y crema.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Nachos Supreme"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    
+                    
+                    
+            </div>
+
+        </div>
+
+    
+        <div
+            class="menu-group"
+            id="sandwiches"
+        >
+
+            <div class="category-title">
+
+                <h3>
+                    Sandwiches                </h3>
+
+                <span></span>
+
+            </div>
+
+
+
+            <div class="product-grid">
+
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+
+                            <img
+                                src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                                alt="Chicken Sandwich"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Chicken Sandwich                                </h4>
+
+                                <strong>
+                                    $5.75                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Pollo crujiente, lechuga, tomate, queso y aderezo cremoso.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Chicken Sandwich"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+
+                            <img
+                                src="https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                                alt="Club Sandwich"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Club Sandwich                                </h4>
+
+                                <strong>
+                                    $6.00                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Pollo, jamón, queso, lechuga, tomate y mayonesa.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Club Sandwich"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    
+            </div>
+
+        </div>
+
+    
+        <div
+            class="menu-group"
+            id="sodas"
+        >
+
+            <div class="category-title">
+
+                <h3>
+                    Sodas                </h3>
+
+                <span></span>
+
+            </div>
+
+
+
+            <div class="product-grid">
+
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+
+                            <img
+                                src="https://distribuidoraojodeagua.com/cdn/shop/files/download_2.jpg?v=1709244340"
+                                alt="Soda Grande"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Soda Grande                                </h4>
+
+                                <strong>
+                                    $1.75                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Bebida fría de cola, limón-lima o naranja.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Soda Grande"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+                    
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            
+
+                            <img
+                                src="https://walmartsv.vtexassets.com/arquivos/ids/372484/Gaseosa-Coca-Cola-Regular-Lata-354-ml-2-3689.jpg?v=638392773683200000"
+                                alt="Soda Mediana"
+                            >
+
+                        </div>
+
+
+                        <div class="product-body">
+
+                            <div class="product-head">
+
+                                <h4>
+                                    Soda Mediana                                </h4>
+
+                                <strong>
+                                    $1.35                                </strong>
+
+                            </div>
+
+
+                            <p>
+                                Bebida fría en tamaño mediano.                            </p>
+
+
+                            <form
+                                class="add-form"
+                                action="#"
+                                method="post"
+                            >
+
+                                <input
+                                    type="hidden"
+                                    name="producto"
+                                    value="Soda Mediana"
+                                >
+
+                                <label>
+
+                                    Cant.
+
+                                    <select name="cantidad">
+
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+
+                                    </select>
+
+                                </label>
+
+
+                                <button
+                                    type="submit"
+                                    class="add-btn"
+                                >
+                                    Agregar
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </article>
+
+                
+            </div>
+
+        </div>
+
+    
+</section>
+
+
+
+<section class="order-panel">
+
+    <div>
+
+        <p class="eyebrow">
+            TU PEDIDO
+        </p>
+    </div>
+
+
+    <div class="summary-box">
+
+        <div class="customer-box">
+            <label for="cliente">
+                Cliente
+            </label>
+
+            <input
+                type="text"
+                id="cliente"
+                name="cliente"
+                placeholder="Agregar cliente"
+            >
+        </div>
+
+        <div class="order-type-options" aria-label="Tipo de pedido">
+            <label>
+                <input
+                    type="radio"
+                    name="tipo_pedido"
+                    value="local"
+                    checked
+                >
+
+                <span>
+                    Local
+                </span>
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="tipo_pedido"
+                    value="llevar"
+                >
+
+                <span>
+                    Llevar
+                </span>
+            </label>
+        </div>
+
+        <div class="order-items">
+            <div class="order-item">
+                <div>
+                    <strong>
+                        Burger Clasica
+                    </strong>
+
+                    <span>
+                        Cant. 1
+                    </span>
+                </div>
+
+                <strong class="order-item-price">
+                    $5.50
+                </strong>
+
+                <div class="order-item-actions">
+                    <button type="button">
+                        Modificar
+                    </button>
+
+                    <button type="button" class="delete">
+                        Eliminar
+                    </button>
+                </div>
+            </div>
+
+            <div class="order-item">
+                <div>
+                    <strong>
+                        Hot Dog Supremo
+                    </strong>
+
+                    <span>
+                        Cant. 2
+                    </span>
+                </div>
+
+                <strong class="order-item-price">
+                    $10.50
+                </strong>
+
+                <div class="order-item-actions">
+                    <button type="button">
+                        Modificar
+                    </button>
+
+                    <button type="button" class="delete">
+                        Eliminar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-row">
+
+            <span>
+                Subtotal
+            </span>
+
+            <strong>
+                $0.00
+            </strong>
+
+        </div>
+
+
+        <div class="summary-row total">
+
+            <span>
+                Total
+            </span>
+
+            <strong>
+                $0.00
+            </strong>
+
+        </div>
+
+
+        <button
+            class="btn btn-primary full-width"
+            type="button"
+        >
+            Cobrar
+        </button>
+
+        <div class="summary-actions">
+            <button
+                class="btn btn-secondary"
+                type="button"
+            >
+                Guardar
+            </button>
+
+            <button
+                class="btn btn-secondary cancel"
+                type="button"
+            >
+                Cancelar
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="history-section" id="historial">
+
+    <div class="section-heading compact">
+
+        <p class="eyebrow">
+            HISTORIAL
+        </p>
+
+        <h2>
+            Pedidos recientes
+        </h2>
+
+        <p>
+            Aquí aparecerán los pedidos realizados.
+        </p>
+
+    </div>
+
+
+    <div class="history-table-wrap">
+
+        <table class="history-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Pedido
+                    </th>
+
+                    <th>
+                        Tipo
+                    </th>
+
+                    <th>
+                        Fecha
+                    </th>
+
+                    <th>
+                        Estado
+                    </th>
+
+                    <th>
+                        Total
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td
+                        colspan="5"
+                        class="table-empty"
+                    >
+                        No hay pedidos registrados todavía.
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+</main>
+
 </body>
+
 </html>
